@@ -1,0 +1,249 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="script.js"></script>
+
+	<style type="text/css">
+	div{
+		margin: 1em;
+	}
+
+	#effectExample{
+		padding: 2em;
+		background-color: red;
+	}
+
+	.Important{
+		font-size: 2em;
+		font-weight: bolder;
+		background-color: lightblue;
+		color: red;
+	}
+
+	.Italic{
+		font-style: italic;
+	}
+	</style>
+
+	<title> jQuery example</title>
+</head>
+<body>
+	<div id="Basic" class="topic">
+		<div id="WhatIsJQuery">
+			What is jQuery?
+		</div>
+		<div id="WhyJQuery">
+			Why jQuery?
+		</div>
+		<div id="jQueryFeature">
+			jQuery features
+		</div>
+		<div id="Tip1">
+			Will jQuery work in all browsers?
+		</div>
+		<div id="jQueryInstallation">
+			jQuery Installation
+			<div id="jQueryInstallationMethod1">
+				<dd>Method#1
+			</div>
+			<div id="jQueryInstallationMethod2">
+				<dd>Method#2
+			</div>
+		</div>
+	</div>
+
+	<div id="Syntax" class="topic" style="display: none">
+		<div id="syntaxContent">
+			Syntax
+		</div>
+		<div id="syntaxExample">
+			Example
+		</div>
+	</div>
+
+	<div id="Selector" class="topic" style="display: none">
+		<div>
+			<h1>Code</h1>
+			
+			Element selector
+			<div id="pElementSelector">
+				$(&quot;p&quot;).css(&#39;background-color&#39;, &#39;red&#39;);
+			</div>
+			<div id="spanElementSelector">
+				$(&quot;span&quot;).css(&#39;background-color&#39;, &#39;green&#39;);
+			</div>
+
+			#ID selector
+			<div id="firstPIDSelector">
+				$(&quot;#first_p&quot;).css(&#39;background-color&#39;, &#39;orange&#39;);
+			</div>
+			<div id="secondSpanSelector">
+				$(&quot;#second_span&quot;).css(&#39;background-color&#39;, &#39;grey&#39;);
+			</div>
+
+			.class selector
+			<div id="firstClassSelector">
+				$(&quot;.first_item&quot;).css(&#39;background-color&#39;, &#39;lightblue&#39;);
+			</div>
+			<div id="secondClassSelector">
+				$(&quot;.second_item&quot;).css(&#39;background-color&#39;, &#39;yellow&#39;);
+			</div>
+		</div>
+	
+		<div>
+			<h1>Website below!!!</h1>
+			<p id="first_p" class="first_item">
+				tag p id=&quot;first_p&quot; class=&quot;first_item&quot;
+			</p>
+			<p id="second_p" class="second_item">
+				tag p id=&quot;second_p&quot; class=&quot;second_item&quot;
+			</p>
+			<span id="first_span" class="first_item">
+				tag span id=&quot;first_span&quot; class=&quot;first_item&quot;
+			</span><br>
+			<span id="second_span" class="second_item">
+				tag span id=&quot;second_span&quot; class=&quot;second_item&quot;
+			</span>
+		</div>
+	</div>
+
+	<div id="Event" class="topic" style="display: none">
+		<div id="eventContent">
+			Steps to use event
+		</div>
+		<div id="syntaxExample">
+			Example (See the code first!)<br>
+			<span id="objectToBindEvent">
+				Action on me!
+			</span>
+			<div id="eventTrace">
+				This is what you have done:
+			</div>
+		</div>
+	</div>
+
+	<div id="Effect" class="topic" style="display: none">
+		<div id="effectHide">Hide</div>
+		<div id="effectShow">Show</div>
+		<div id="effectToggle">Toggle</div>
+		<div id="effectFadeIn">Fade In</div>
+		<div id="effectFadeOut">Fade Out</div>
+		<div id="effectFadeToggle">Fade Toggle</div>
+		<div id="effectFadeToHalf">Fade To 0.5</div>
+		<div id="effectFadeToFull">Fade To 1</div>
+		<div id="effectSlideDown">Slide Down</div>
+		<div id="effectSlideUp">Slide Up</div>
+		<div id="effectSlideToggle">Slide Toggle</div>
+		<div id="effectAnimateBig">Get bigger</div>
+		<div id="effectAnimateSmall">Get smaller</div>
+		<div id="effectAnimateFadeOutAndIn">Fade Out and In</div>
+		<div id="effectExample">
+			Look at how I show and hide !!!
+		</div>
+	</div>
+
+	<div id="HTML" class="topic" style="display: none">
+		<div id="getText">
+			$(&quot;#HTMLExample&quot;).text()
+		</div>
+		<div id="getHTML">
+			$(&quot;#HTMLExample&quot;).html()
+		</div>
+		<div id="getVal">
+			$(&quot;textarea&quot;).val()
+		</div>
+		<div id="getAttr">
+			$(&quot;#HTMLExample&quot;).attr(&quot;style&quot;)
+		</div>
+		<div id="setText">
+			$(&quot;#HTMLExample&quot;).text(&quot;This is a new example&quot;)
+		</div>
+		<div id="setHTML">
+			$(&quot;#HTMLExample&quot;).html(&quot;&lt;i&gt;This is a new example&lt;/i&gt;&quot;)
+		</div>
+		<div id="setVal">
+			$(&quot;textarea&quot;).val(&quot;This is a new val&quot;)
+		</div>
+		<div id="setAttr">
+			$(&quot;#HTMLExample&quot;).attr(&quot;style&quot;, &quot;background-color:red; height:1em;&quot;)
+		</div>
+		<div id="append">
+			$(&quot;#HTMLExample&quot;).append(&quot;&lt;i&gt;This is the appended text&lt;/i&gt;&quot;);
+		</div>
+		<div id="prepend">
+			$(&quot;#HTMLExample&quot;).prepend(&quot;&lt;u&gt;This is the prepended text&lt;/u&gt;&quot;);
+		</div>
+		<div id="after">
+			$(&quot;#HTMLExample&quot;).after(&quot;&lt;u&gt;This is the after text&lt;/u&gt;&quot;);
+		</div>
+		<div id="before">
+			$(&quot;#HTMLExample&quot;).before(&quot;&lt;i&gt;This is the before text&lt;/i&gt;&quot;);
+		</div>
+		<div id="empty">
+			$(&quot;#HTMLExample&quot;).empty();
+		</div>
+		<div id="remove">
+			$(&quot;#HTMLExample&quot;).remove();
+		</div>
+		<div id="HTMLExample" style="background-color:yellow; height:1em;">
+			<b>This is an example</b>
+		</div>
+		<textarea></textarea>
+	</div>
+
+	<div id="CSS" class="topic" style="display: none">
+		<div id="addClass">
+			$(&quot;#CSSExample&quot;).addClass(&quot;Important Italic&quot;);
+		</div>
+		<div id="removeClass">
+			$(&quot;#CSSExample&quot;).removeClass(&quot;Important&quot;);
+		</div>
+		<div id="toggleClass">
+			$(&quot;#CSSExample&quot;).toggleClass(&quot;Important&quot;);
+		</div>
+		<div id="getCSS">
+			$(&quot;#CSSExample&quot;).css(&quot;color&quot;);
+		</div>
+		<div id="setCSS">
+			$(&quot;#CSSExample&quot;).css(&quot;color&quot;, &quot;green&quot;);
+		</div>
+		<div id="CSSExample">
+			Example
+		</div>
+	</div>
+
+	<div id="AJAX" class="topic" style="display: none">
+		<div id="AJAXText">
+			Before request
+		</div>
+		<button id="btnAJAXExecution">
+			Click me to request the file from the server
+		</button>
+	</div>
+
+	<button id="btnBasic">
+		Basic
+	</button>
+	<button id="btnSyntax">
+		Syntax
+	</button>
+	<button id="btnSelector">
+		Selector
+	</button>
+	<button id="btnEvent">
+		Event
+	</button>
+	<button id="btnEffect">
+		Effect
+	</button>
+	<button id="btnHTML">
+		HTML
+	</button>
+	<button id="btnCSS">
+		CSS
+	</button>
+	<button id="btnAJAX">
+		AJAX
+	</button>
+</body>
+</html>
